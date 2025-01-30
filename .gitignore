@@ -11,6 +11,7 @@ node_modules
 .DS_Store
 dist
 dist-ssr
+.vite-ssg-temp
 coverage
 *.local
 
@@ -28,3 +29,6 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Generated type files
+components.d.ts
