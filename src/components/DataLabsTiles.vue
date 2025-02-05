@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BCard, BCardGroup, BCardText, BCol, BContainer, BRow } from 'bootstrap-vue-next'
+import { BCard, BCardGroup, BCardText, BContainer } from 'bootstrap-vue-next'
 </script>
 
 <template>
@@ -45,7 +45,7 @@ import { BCard, BCardGroup, BCardText, BCol, BContainer, BRow } from 'bootstrap-
   background-color: #3a3b75;
 }
 
-.dl-tiles {
+.card.dl-tiles {
   background-color: #291a56;
 }
 </style>
