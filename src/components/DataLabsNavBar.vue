@@ -17,9 +17,13 @@ import {
     <BNavbarToggle target="nav-collapse" />
     <BCollapse id="nav-collapse" is-nav>
       <BNavbarNav class="ms-auto">
-        <BNavItem href="#">DIY Planet Search</BNavItem>
+        <BNavItem href="https://waps.cfa.harvard.edu/microobservatory/diy"
+          >DIY Planet Search</BNavItem
+        >
         <div class="vr bg-light"></div>
-        <BNavItem href="#">Spectrum Lab</BNavItem>
+        <BNavItem href="https://waps.cfa.harvard.edu/microobservatory/spectrum"
+          >Spectrum Lab</BNavItem
+        >
       </BNavbarNav>
     </BCollapse>
   </BNavbar>
