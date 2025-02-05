@@ -10,5 +10,6 @@ import DataLabsNavBar from './components/DataLabsNavBar.vue'
 
   <main>
     <DataLabsIntro />
+    <DataLabsTiles />
   </main>
 </template>
