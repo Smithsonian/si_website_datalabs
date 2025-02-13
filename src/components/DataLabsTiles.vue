@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { BCard, BCardGroup, BCardText, BCol, BContainer, BRow } from 'bootstrap-vue-next'
+import { BCol, BContainer, BRow } from 'bootstrap-vue-next'
 </script>
 
 <template>
-  <div class="dl-tiles-section py-4">
+  <div class="bg-dl-bright-purple py-4">
     <BContainer>
       <BRow>
         <BCol cols="4">
-          <div class="card dl-tiles text-light h-100">
+          <div class="card bg-dl-dark-purple text-light h-100">
             <div class="card-img-top dl-tile-image-window">
               <img
                 src="/src/assets/wasp-96b.png"
@@ -29,7 +29,7 @@ import { BCard, BCardGroup, BCardText, BCol, BContainer, BRow } from 'bootstrap-
           </div>
         </BCol>
         <BCol cols="4">
-          <div class="card dl-tiles text-light h-100">
+          <div class="card bg-dl-dark-purple text-light h-100">
             <img src="/src/assets/Filters.jpeg" class="card-img-top" alt="Colored glass filters" />
             <div class="card-body">
               <h5 class="card-title">Spectrum Lab</h5>
@@ -49,14 +49,6 @@ import { BCard, BCardGroup, BCardText, BCol, BContainer, BRow } from 'bootstrap-
 </template>
 
 <style>
-.dl-tiles-section {
-  background-color: #3a3b75;
-}
-
-.card.dl-tiles {
-  background-color: #291a56;
-}
-
 .dl-tile-image-window {
   overflow: hidden;
   height: 200px;

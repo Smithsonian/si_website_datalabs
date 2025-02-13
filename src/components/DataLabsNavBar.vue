@@ -24,7 +24,7 @@ import {
           opacity-hover="75"
           >DIY Planet Search</BNavItem
         >
-        <BNavText class="dl-navbar-bg-gen-grey">|</BNavText>
+        <BNavText class="text-gen-grey">|</BNavText>
         <BNavItem
           href="https://waps.cfa.harvard.edu/microobservatory/spectrum"
           variant="light"
@@ -35,9 +35,3 @@ import {
     </BCollapse>
   </BNavbar>
 </template>
-
-<style>
-.dl-navbar-bg-gen-grey {
-  color: var(--gen-grey);
-}
-</style>

@@ -46,3 +46,16 @@ $light: $gen-white;
 
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-vue-next/src/styles/styles.scss';
+
+// Utility classes
+.text-gen-grey {
+  color: var(--gen-grey) !important;
+}
+
+.bg-dl-bright-purple {
+  background-color: var(--dl-bright-purple) !important;
+}
+
+.bg-dl-dark-purple {
+  background-color: var(--dl-dark-purple) !important;
+}
