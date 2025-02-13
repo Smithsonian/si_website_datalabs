@@ -20,4 +20,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // We only need this for Bootstrap so we're at their mercy
+        // in terms of how they use SASS
+        // 5.3.4 will make this no longer needed, they say
+        quietDeps: true,
+        silenceDeprecations: ['import'],
+      },
+    },
+  },
 })

@@ -1,0 +1,48 @@
+// Speclab customizations before loading Bootstrap
+// Open Sans at the front with Bootstrap fallbacks behind
+$font-family-base:
+  'Open Sans',
+  system-ui,
+  -apple-system,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  'Noto Sans',
+  'Liberation Sans',
+  Arial,
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji';
+
+// SASS custom variables
+// Laura "general" colors
+$gen-white: #ffffff; // ffffff is also Smithsonian white
+$gen-black: #000000;
+$gen-gold: #ffcd00; // ffcd00 is also Smithsonian gold
+$gen-grey: #a8a8b4;
+
+// Data Labs colors
+$dl-bright-purple: #3a3b75;
+$dl-dark-purple: #291a56;
+$dl-yellow: #d8f354;
+
+// CSS variable versions
+:root {
+  --gen-white: #{$gen-white};
+  --gen-black: #{$gen-black};
+  --gen-gold: #{$gen-gold};
+  --gen-grey: #{$gen-grey};
+
+  --dl-bright-purple: #{$dl-bright-purple};
+  --dl-dark-purple: #{$dl-dark-purple};
+  --dl-yellow: #{$dl-yellow};
+}
+
+// SASS Bootstrap overrides
+$dark: $gen-black;
+$light: $gen-white;
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-vue-next/src/styles/styles.scss';
