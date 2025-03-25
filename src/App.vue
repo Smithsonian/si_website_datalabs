@@ -10,7 +10,7 @@ useHead({ title: 'Smithsonian Datalabs' });
 
   <main>
     <DataLabsIntro />
-    <DataLabsTiles />
+    <DataLabsTileList />
   </main>
 
   <footer>
