@@ -8,6 +8,7 @@
             :class="{ 'dl-tile-image': !tallImage, 'card-img-top': tallImage }"
             :alt="imgAlt"
           />
+          <div class="position-absolute dl-image-fader"></div>
         </div>
         <div class="card-body">
           <h5 class="card-title">{{ cardTitle }}</h5>
@@ -47,5 +48,19 @@ defineProps<{
 .dl-tile-image {
   height: 200px;
   margin: auto;
+}
+
+.dl-image-fader {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0%;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.card.dl-tile:hover .dl-image-fader {
+  opacity: 10%;
 }
 </style>
