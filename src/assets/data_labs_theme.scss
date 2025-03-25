@@ -26,6 +26,7 @@ $gen-grey: #a8a8b4;
 // Data Labs colors
 $dl-bright-purple: #3a3b75;
 $dl-dark-purple: #291a56;
+$dl-dark-purple-hover: #37266b;
 $dl-yellow: #d8f354;
 
 // CSS variable versions
@@ -37,6 +38,7 @@ $dl-yellow: #d8f354;
 
   --dl-bright-purple: #{$dl-bright-purple};
   --dl-dark-purple: #{$dl-dark-purple};
+  --dl-dark-purple-hover: #{$dl-dark-purple-hover};
   --dl-yellow: #{$dl-yellow};
 }
 
