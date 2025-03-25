@@ -1,15 +1,3 @@
-<script setup lang="ts">
-import {
-  BCollapse,
-  BNavbar,
-  BNavbarBrand,
-  BNavbarNav,
-  BNavbarToggle,
-  BNavItem,
-  BNavText,
-} from 'bootstrap-vue-next';
-</script>
-
 <template>
   <BNavbar v-b-color-mode="'dark'" variant="dark">
     <BNavbarBrand href="#">
@@ -18,20 +6,14 @@ import {
     <BNavbarToggle target="nav-collapse" />
     <BCollapse id="nav-collapse" is-nav>
       <BNavbarNav class="ms-auto">
-        <BNavItem
-          href="https://waps.cfa.harvard.edu/microobservatory/diy"
-          variant="light"
-          opacity-hover="75"
-          >DIY Planet Search</BNavItem
-        >
+        <BNavItem :href="DIY_URL" variant="light" opacity-hover="75">DIY Planet Search</BNavItem>
         <BNavText class="text-gen-grey">|</BNavText>
-        <BNavItem
-          href="https://waps.cfa.harvard.edu/microobservatory/spectrum"
-          variant="light"
-          opacity-hover="75"
-          >Spectrum Lab</BNavItem
-        >
+        <BNavItem :href="SPECLAB_URL" variant="light" opacity-hover="75">Spectrum Lab</BNavItem>
       </BNavbarNav>
     </BCollapse>
   </BNavbar>
 </template>
+
+<script setup lang="ts">
+import { DIY_URL, SPECLAB_URL } from '@/constants';
+</script>
