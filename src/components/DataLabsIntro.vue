@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BCol, BContainer, BRow } from 'bootstrap-vue-next'
+import { BCol, BContainer, BRow } from 'bootstrap-vue-next';
 </script>
 
 <template>

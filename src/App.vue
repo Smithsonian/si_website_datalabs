@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useHead } from '@unhead/vue'
-import DataLabsFooter from './components/DataLabsFooter.vue'
-import DataLabsIntro from './components/DataLabsIntro.vue'
-import DataLabsNavBar from './components/DataLabsNavBar.vue'
+import { useHead } from '@unhead/vue';
+import DataLabsFooter from './components/DataLabsFooter.vue';
+import DataLabsIntro from './components/DataLabsIntro.vue';
+import DataLabsNavBar from './components/DataLabsNavBar.vue';
 
-useHead({ title: 'Smithsonian Datalabs' })
+useHead({ title: 'Smithsonian Datalabs' });
 </script>
 <template>
   <header>

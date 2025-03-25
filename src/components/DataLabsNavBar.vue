@@ -7,7 +7,7 @@ import {
   BNavbarToggle,
   BNavItem,
   BNavText,
-} from 'bootstrap-vue-next'
+} from 'bootstrap-vue-next';
 </script>
 
 <template>
