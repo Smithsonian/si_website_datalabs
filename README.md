@@ -1,40 +1,34 @@
 # si_website_datalabs
 Smithsonian Datalabs home page. Links to the actual data labs on separate repos.
 
-This template should help get you started developing with Vue 3 in Vite.
+The development preview deployment is at https://smithsonian.github.io/si_website_datalabs .
 
-## Recommended IDE Setup
+## Developing
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Prerequisites
 
-## Type Support for `.vue` Imports in TS
+1. Node 22.9.0 or similar
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+If you need several Node versions to coexist on your machine, this project has a `.tool-versions` for use with [asdf](https://asdf-vm.com/).
 
-## Customize configuration
+2. Prettier VS Code extension (recommended)
+3. Vue VS Code extension (recommended)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Install
 
-## Project Setup
+1. Clone the repo.
+2. Inside the clone: `npm install`
 
-```sh
-npm install
-```
+### Running
 
-### Compile and Hot-Reload for Development
+1. `npm run dev`
 
-```sh
-npm run dev
-```
+The app is now running at http://localhost:5173/ by default. Code changes will take effect immediately.
 
-### Type-Check, Compile and Minify for Production
+## Deploying to GitHub
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+1. `npm run format` to apply code style. This is not necessary if your IDE formats with Prettier on save.
+2. `npm run build` to verify build success. TypeScript errors may appear here that do not appear in development mode.
+    1. (Optional) `npm run preview` after building. This will serve the build output on 4173, so you can verify it looks right. This is overkill unless you're making changes to the build process.
+3. Commit to the `develop` branch.
+4. Push the `develop` branch. After a few minutes your changes will appear at https://smithsonian.github.io/si_website_datalabs .
