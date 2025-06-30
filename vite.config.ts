@@ -1,10 +1,14 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
-import Components from 'unplugin-vue-components/vite'
-import { BootstrapVueNextResolver } from 'bootstrap-vue-next'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import vueDevTools from 'vite-plugin-vue-devtools';
+import Components from 'unplugin-vue-components/vite';
+import { BootstrapVueNextResolver } from 'bootstrap-vue-next';
+
+// Different build output dirs for different deploy envs with different
+// base paths
+const outDir = process.env.ENV ? `dist-${process.env.ENV}` : 'dist';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -31,4 +35,8 @@ export default defineConfig({
       },
     },
   },
-})
+  build: {
+    outDir,
+    sourcemap: true,
+  },
+});
