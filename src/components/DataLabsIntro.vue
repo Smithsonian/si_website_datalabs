@@ -11,7 +11,8 @@ import { BCol, BContainer, BRow } from 'bootstrap-vue-next';
           <p>
             are interactive instructional modules that engage high school students in authentic
             investigations using real data and online data visualization tools from the Smithsonian
-            Astrophysical Observatory at the Center for Astrophysics | Harvard &amp; Smithsonian.
+            Astrophysical Observatory at the Center for Astrophysics&nbsp;| Harvard&nbsp;&amp;
+            Smithsonian.
           </p>
         </BCol>
       </BRow>

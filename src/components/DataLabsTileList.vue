@@ -1,20 +1,7 @@
 <template>
   <div class="bg-dl-bright-purple py-4">
     <BContainer>
-      <BRow>
-        <DataLabsTile
-          :link-url="DIY_URL"
-          :img-src="diyImg"
-          img-alt="Exoplanet transiting a star"
-          card-title="DIY Planet Search"
-        >
-          New planets are being discovered on a regular basis. After new planets have been
-          discovered the scientific community needs to follow up with further investigations. Help
-          scientists better understand the movements of these planets around other stars by taking
-          your own measurements of known exoplanets and contributing them to the DIY Planet Search
-          Community. Using the DIY tools you’ll collect and analyze your own images of other star
-          systems.
-        </DataLabsTile>
+      <BRow gutter-y="4">
         <DataLabsTile
           :link-url="SPECLAB_URL"
           :img-src="speclabImg"
@@ -22,11 +9,37 @@
           card-title="Spectrum Lab"
           tall-image
         >
-          The Spectrum Lab is an online data visualization tool and associated set of investigations
-          that supports students in learning about light, color, and the electromagnetic spectrum by
-          working with hands-on materials, models and simulations, and authentic scientific spectral
-          data. Implemented over 3 to 8 class periods, Spectrum Lab activities promote students’
-          reasoning about light and color phenomena.
+          <p>
+            An interactive data visualization tool that helps students explore the electromagnetic
+            spectrum. Students develop deeper reasoning around light and color phenomena through a
+            series of investigations using:
+          </p>
+          <ul>
+            <li>Hands-on materials</li>
+            <li>Models</li>
+            <li>Simulations</li>
+            <li>Authentic spectral data from many disciplines</li>
+          </ul>
+          Implemented over 3 - 8 class periods.
+        </DataLabsTile>
+        <DataLabsTile
+          :link-url="DIY_URL"
+          :img-src="diyImg"
+          img-alt="Exoplanet transiting a star"
+          card-title="DIY Planet Search"
+        >
+          <p>
+            An interactive data interface where students engage with the messiness of real data,
+            using the same analytical methods that professional scientists use to separate signal
+            from noise in their investigations. Through 6 core activities students:
+          </p>
+
+          <ul>
+            <li>Explore models of exoplanets</li>
+            <li>Collect real telescope data</li>
+            <li>Analyze their own images of other star systems</li>
+          </ul>
+          Implemented over 4 to 6 instructional hours.
         </DataLabsTile>
       </BRow>
     </BContainer>
