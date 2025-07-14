@@ -6,14 +6,12 @@ import { BCol, BContainer, BRow } from 'bootstrap-vue-next';
   <div class="text-light green-purple-lines-bg d-flex flex-column justify-content-end">
     <BContainer>
       <BRow>
-        <BCol cols="6">
+        <BCol cols="12" lg="8">
           <h1>Data Labs</h1>
           <p>
-            are technology-enabled instructional modules that, over 3–8 class periods, engage high
-            school students in authentic investigations using real data and online data
-            visualization tools. Developed with funding from the National Science Foundation, the
-            Smithsonian Institution, and NASA, these data-centric explorations incorporate exciting
-            trans-disciplinary content connections from across the Smithsonian.
+            are interactive instructional modules that engage high school students in authentic
+            investigations using real data and online data visualization tools from the Smithsonian
+            Astrophysical Observatory at the Center for Astrophysics | Harvard &amp; Smithsonian.
           </p>
         </BCol>
       </BRow>

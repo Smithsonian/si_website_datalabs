@@ -1,5 +1,5 @@
 <template>
-  <BCol cols="4">
+  <BCol cols="12" md="6" lg="4">
     <a :href="linkUrl" class="text-decoration-none">
       <div class="card dl-tile text-light h-100">
         <div class="card-img-top dl-tile-image-window position-relative">
