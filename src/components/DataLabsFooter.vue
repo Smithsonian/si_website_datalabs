@@ -9,9 +9,9 @@ import { BCol, BContainer, BRow } from 'bootstrap-vue-next';
         <BCol cols="8">
           <p>
             <small>
-              Smithsonian DataLabs are supported by the Smithsonian Institution’s Together We Thrive
-              initiative and funded in part by the Jeff Bezos gift to the National Air and Space
-              Museum.
+              Smithsonian Data Labs are supported by the Smithsonian Institution’s Together We
+              Thrive initiative and funded in part by the Jeff Bezos gift to the National Air and
+              Space Museum.
             </small>
           </p>
         </BCol>
