@@ -1,6 +1,6 @@
 <template>
   <BNavbar v-b-color-mode="'dark'" variant="dark">
-    <BNavbarBrand href="#">
+    <BNavbarBrand :href="DATA_LABS_BASE">
       <img src="/src/assets/DataLabsLogo@2x.png" height="90" width="343" />
     </BNavbarBrand>
     <BNavbarToggle target="nav-collapse" />
@@ -15,5 +15,5 @@
 </template>
 
 <script setup lang="ts">
-import { DIY_URL, SPECLAB_URL } from '@/constants';
+import { DATA_LABS_BASE, DIY_URL, SPECLAB_URL } from '@/constants';
 </script>
