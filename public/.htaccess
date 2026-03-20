@@ -51,3 +51,5 @@
     # ExpiresByType font/*                              "access plus 1 year" # default
 
 </IfModule>
+
+Header always set X-Frame-Options "DENY"
